@@ -10,7 +10,7 @@ Instrucciones. Generar numeros aleatorios
 using namespace std;
 
 int main (){
-	srand (time(o));
+	srand (time());
 	int valorMax = 1, valor Max= 6;
 	
     short dado1 =(rand() % (valorMax - valorMin + 1)) + valorMin;
