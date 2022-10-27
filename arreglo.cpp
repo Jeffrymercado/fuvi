@@ -9,16 +9,24 @@ Lugar : ITV
 using namespace std;
 
 int main () {
+	int cant;
+	
+	cout << "Ingrese la cantidad de Datos: ";
+	cin >> cant;
 	
 	
-	double promedioNotas [10];
+	double promedioNotas [cant];
 	
-	promedioNotas[0] = 15.2;
-	promedioNotas[1] = 55.8;
+	cout << "Ingrese los datos: " << endl;
+	for (int i=0;i<cant;i++) {
+		cout << "Elemento [" << i << "] = ";
+        cin >> promedioNotas[i];
+	}
 	
-	cout << promedioNotas[0] << endl;
-	cout << promedioNotas[1] << endl;
-	
-	
+	for (int i=0;i<cant;i++) {
+		cout << "Elemento [" << i << "] = " << promedioNotas[i] << endl;
+		}
+
+
 	return 0;
 }
